@@ -1,3 +1,5 @@
+import { LoginPage } from './login/login.page';
+import { CadastroUsuarioPage } from './cadastro-usuario/cadastro-usuario.page';
 import { Component } from '@angular/core';
 
 import { Platform } from '@ionic/angular';
@@ -17,8 +19,23 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
+      title: 'Hanking',
+      url: '/hanking',
+      icon: 'list'
+    },
+    {
+      title: 'Sobre',
+      url: '/sobre',
+      icon: 'list'
+    },
+    {
+      title: 'Crie sua conta',
+      url: '/cadastro-usuario',
+      icon: 'list'
+    },
+    {
+      title: 'Login',
+      url: '/login',
       icon: 'list'
     }
   ];
