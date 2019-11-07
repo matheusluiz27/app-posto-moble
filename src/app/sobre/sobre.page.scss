@@ -1,8 +1,22 @@
-.ocean {
-    position:relative;
+ion-card {
+    position:absolute;
     left:0;
     right:0;
     bottom:0;
     height:80%;
-    background: rgb(245, 245, 245);
+    background: rgb(124, 207, 255);
+    border: 10;
+ }
+ ion-header {
+     --ion-color-primary: rgb(91, 194, 235);
+ }
+ ion-card-header{
+     background: rgb(48, 207, 255);
+     text-shadow: -9px 5px 10px;
+ }
+ .container{
+     background: rgb(110, 220, 240);
+ }
+ ion-title{
+     background: rgb(141, 209, 255);
  }
