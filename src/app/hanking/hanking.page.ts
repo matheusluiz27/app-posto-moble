@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from 'selenium-webdriver/http';
+import { getHtmlTagDefinition } from '@angular/compiler';
+import { Subscriber } from 'rxjs';
 
 @Component({
   selector: 'app-hanking',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HankingPage implements OnInit {
 
-  constructor() { }
+  constructor(public http:HttpClient) { }
 
   ngOnInit() {
+  }
+
+  listarpostos() {
+    this.http.get( +"/hanking").subscribe(
+      result=>{
+        console.log(result);
+      }
+    )
   }
 
 }
