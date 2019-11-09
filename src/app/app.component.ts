@@ -1,10 +1,15 @@
+import { ServicosService } from './servicos.service';
 import { LoginPage } from './login/login.page';
 import { CadastroUsuarioPage } from './cadastro-usuario/cadastro-usuario.page';
 import { Component } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+
 
 @Component({
   selector: 'app-root',
@@ -41,13 +46,14 @@ export class AppComponent {
   ];
 
   constructor(
+    public servicosService: ServicosService,
+    public http: HttpClientModule,
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar
   ) {
     this.initializeApp();
   }
-
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
