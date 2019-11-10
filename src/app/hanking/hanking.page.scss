@@ -2,6 +2,12 @@
     font-family: Arial, Helvetica, sans-serif;
     background: rgb(93, 182, 255);
 }
-.ion-label{
+ion-label{
     font-style: italic;
+}
+ion-title {
+    background: rgb(107, 205, 250);
+}
+ion-header {
+    --ion-color-primary: rgb(0, 0, 0);
 }
