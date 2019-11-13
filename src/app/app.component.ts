@@ -1,6 +1,6 @@
-import { ServicosService } from './Servicos/servicos.service';
+import { ServicosService } from './servicos.service';
 import { LoginPage } from './login/login.page';
-import { CadastroUsuarioPage } from './cadastro/cadastro-usuario.page';
+import { CadastroUsuarioPage } from './cadastro-usuario/cadastro-usuario.page';
 import { Component } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -9,7 +9,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-import { NativeStorage } from '@ionic-native/native-storage/ngx';
 
 
 @Component({
@@ -51,8 +50,7 @@ export class AppComponent {
     public http: HttpClientModule,
     private platform: Platform,
     private splashScreen: SplashScreen,
-    private statusBar: StatusBar,
-    // public nativeStorage: NativeStorage,
+    private statusBar: StatusBar
   ) {
     this.initializeApp();
   }

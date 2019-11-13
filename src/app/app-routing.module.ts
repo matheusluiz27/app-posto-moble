@@ -14,10 +14,7 @@ const routes: Routes = [
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'cadastro-usuario', loadChildren: './cadastro-usuario/cadastro-usuario.module#CadastroUsuarioPageModule' },
   { path: 'sobre', loadChildren: './sobre/sobre.module#SobrePageModule' },
-  { path: 'hanking', loadChildren: './hanking/hanking.module#HankingPageModule' },
-  { path: 'usuario', loadChildren: './usuario/usuario.module#UsuarioPageModule' },
-  { path: 'landing', loadChildren: './landing/landing.module#LandingPageModule' }
-
+  { path: 'hanking', loadChildren: './hanking/hanking.module#HankingPageModule' }
 ];
 
 @NgModule({
