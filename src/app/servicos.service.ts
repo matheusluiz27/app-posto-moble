@@ -1,3 +1,5 @@
+import { HttpService } from './core/service/http.service';
+import { environment } from './../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -9,14 +11,9 @@ import { Observable } from 'rxjs';
 export class ServicosService {
 
   public items: any;
-  constructor(
-    public http: HttpClient
-  ) {
-    this.loadData();
-  }
-  loadData() {
-    let data: Observable<any>;
-    data = this.http.get('');
-    data.subscribe(result => {} );
+  constructor( public http: HttpClient, private httpService: HttpService ) { } 
+
+  get() {
+    return this.httpService.get<JSON[]>(`${environment.api}`)
   }
 }

@@ -11,6 +11,9 @@ import { AppRoutingModule } from './app-routing.module';
 
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 
+import { IonicStorageModule } from '@ionic/storage';
+import { HTTP } from '@ionic-native/http/ngx'
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -18,12 +21,14 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     BrowserModule,
     HttpClientModule,
     IonicModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    IonicStorageModule.forRoot()
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, 
+    HTTP
   ],
   bootstrap: [AppComponent]
 })
