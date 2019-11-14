@@ -20,7 +20,10 @@
     "@angular/platform-browser-dynamic": "~8.1.2",
     "@angular/router": "~8.1.2",
     "@ionic-native/core": "^5.0.0",
+<<<<<<< HEAD
     "@ionic-native/http": "^5.16.0",
+=======
+>>>>>>> c1161bc212ada30e4ea7f40f0c98a8b9ab181a8d
     "@ionic-native/splash-screen": "^5.0.0",
     "@ionic-native/status-bar": "^5.0.0",
     "@ionic/angular": "^4.7.1",

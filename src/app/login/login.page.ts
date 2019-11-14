@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
+<<<<<<< HEAD
   
   constructor(private authService: AuthServiceService) { }
 
@@ -16,5 +17,12 @@ export class LoginPage implements OnInit {
   async logar() {
 
   }
+=======
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+>>>>>>> c1161bc212ada30e4ea7f40f0c98a8b9ab181a8d
 
 }

@@ -4,19 +4,20 @@ ion-card {
     right:0;
     bottom:0;
     height:80%;
-    background: rgb(124, 207, 255);
+    background: #bff9ff;
     border: 10;
  }
  ion-header {
      --ion-color-primary: rgb(0, 0, 0);
  }
  ion-card-header{
-     background: rgb(48, 207, 255);
-     text-shadow: -9px 5px 10px;
+     // card
+     background: #0cd1e8;
+     //text-shadow: -9px 5px 10px;
  }
- .container{
+ .content{
      background: rgb(110, 220, 240);
  }
  ion-title{
-     background: rgb(141, 209, 255);
+     text-align: left;
  }
