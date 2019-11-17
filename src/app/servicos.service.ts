@@ -17,6 +17,9 @@ export class ServicosService {
   loadData() {
     let data: Observable<any>;
     data = this.http.get('');
-    data.subscribe(result => {} );
+    data.subscribe(result => {
+      this.items = result;
+    } );
   }
+
 }

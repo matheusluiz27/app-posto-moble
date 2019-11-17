@@ -14,7 +14,8 @@ const routes: Routes = [
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'cadastro-usuario', loadChildren: './cadastro-usuario/cadastro-usuario.module#CadastroUsuarioPageModule' },
   { path: 'sobre', loadChildren: './sobre/sobre.module#SobrePageModule' },
-  { path: 'hanking', loadChildren: './hanking/hanking.module#HankingPageModule' }
+  { path: 'hanking', loadChildren: './hanking/hanking.module#HankingPageModule' },  { path: 'infoposto', loadChildren: './infoposto/infoposto.module#InfopostoPageModule' }
+
 ];
 
 @NgModule({
