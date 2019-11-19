@@ -42,6 +42,11 @@ export class AppComponent {
       title: 'Login',
       url: '/login',
       icon: 'list'
+    },
+    {
+      title: 'Configurações',
+      url: '/confi',
+      icon: 'list'
     }
   ];
 
