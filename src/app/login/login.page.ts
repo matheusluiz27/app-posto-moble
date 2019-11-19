@@ -1,5 +1,6 @@
-import { AuthServiceService } from './../service/auth-service.service';
+import { AuthServiceService } from '../service/auth/auth-service.service';
 import { Component, OnInit } from '@angular/core';
+import { Login } from '../model/Login';
 
 @Component({
   selector: 'app-login',
@@ -7,22 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-<<<<<<< HEAD
+  private loginModel = new Login();
   
   constructor(private authService: AuthServiceService) { }
 
   ngOnInit() {
   }
 
-  async logar() {
-
+  logar() {
+    try {
+      this.authService.login(this.loginModel);
+    } catch (erro) {
+      
+    }
   }
-=======
-
-  constructor() { }
-
-  ngOnInit() {
-  }
->>>>>>> c1161bc212ada30e4ea7f40f0c98a8b9ab181a8d
 
 }

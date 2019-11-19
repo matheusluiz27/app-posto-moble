@@ -1,16 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HTTP, HTTPResponse } from '@ionic-native/http/ngx';
-import { IonicStorageModule } from '@ionic/storage';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HttpService {
 
-  constructor(private http: HTTP, private storage: Storage) { }
+  constructor(private http: HTTP) { }
 
   private async getAuthorizationHeader(headers: any){
-    const token = await this.storage.getItem('token');
+    const token = await sessionStorage.getItem('token');
 
     if (token) {
       headers["Authorization"] = `Bearer &{token}`;

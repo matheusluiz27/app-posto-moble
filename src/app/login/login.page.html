@@ -1,48 +1,27 @@
 <ion-header>
-  <ion-toolbar color = 'secondary'>
+  <ion-toolbar color='secondary'>
     <ion-title>PostoAPP</ion-title>
   </ion-toolbar>
 </ion-header>
-<<<<<<< HEAD
 
 <ion-content padding='true'>
   <h1>Fazer login</h1>
   <form>
-  <ion-list>
-  <ion-item>
-  <ion-label position="stacked">Nome</ion-label>
-  <ion-input autocomplete="off" type="text"></ion-input>
-  </ion-item>
-  
-  <ion-item>
-  <ion-label position="stacked">Senha</ion-label>
-  <ion-input autocomplete="off" type="password"></ion-input>
-=======
-<ion-content padding='true'>
-  <h1>Fazer login</h1>
-  <form>
-      <div class="ion-text-start">
-  <ion-list>
-  <ion-item>
-    <ion-label position="stacked">Nome</ion-label>
-    <ion-input autocomplete="off" type="text"></ion-input>
-  </ion-item>
-  
-  <ion-item>
-    <ion-label position="stacked">Senha</ion-label>
-    <ion-input autocomplete="off" type="password"></ion-input>
->>>>>>> c1161bc212ada30e4ea7f40f0c98a8b9ab181a8d
-  </ion-item>
-  
-  <ion-item lines='none'>
-  <a routerLink='/cadastro-usuario'>Crie sua conta agora!</a>
-  </ion-item>
-  </ion-list>
-<<<<<<< HEAD
-  <ion-button expand="block" share="round" color="dark">Login</ion-button>
-=======
-    <ion-button expand="block" share="round" color="secondary">Login</ion-button>
-    </div>
->>>>>>> c1161bc212ada30e4ea7f40f0c98a8b9ab181a8d
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">Nome</ion-label>
+        <ion-input autocomplete="off" [(ngModel)]="loginModel.email" type="text" name="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Senha</ion-label>
+        <ion-input autocomplete="off" [(ngModel)]="loginModel.senha" type="password" name="senha"></ion-input>
+      </ion-item>
+
+      <ion-item lines='none'>
+        <a routerLink='/cadastro-usuario'>Crie sua conta agora!</a>
+      </ion-item>
+    </ion-list>
+    <ion-button expand="block" (click)="logar()" share="round" color="dark">Login</ion-button>
   </form>
-  </ion-content>
+</ion-content>
