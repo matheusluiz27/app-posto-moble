@@ -15,7 +15,7 @@ public items: any;
    }
    infoData() {
     let Data: Observable<any>;
-    Data = this.http.get('hghfg');
+    Data = this.http.get('');
     Data.subscribe(result => {
       this.items = result;
     });
