@@ -13,6 +13,8 @@ import { Observable } from 'rxjs';
 })
 export class HankingPage implements OnInit {
 
+  stars: string[] = [];
+
   public items: any;
   constructor(public http: HttpClient) {}
 
