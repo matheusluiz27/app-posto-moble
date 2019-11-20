@@ -5,7 +5,7 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "start": "ionic serve --host 0.0.0.0 --proxy-config proxy.conf.js",
+    "start": "ng serve --host 0.0.0.0 --proxy-config proxy.conf.js",
     "start-angular": "ng serve --host 0.0.0.0 --proxy-config proxy.conf.js",
     "build": "ng build",
     "test": "ng test",

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../model/Usuario';
 import { UsuarioServiceService } from '../service/usuario/usuario-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro-usuario',
@@ -10,12 +11,18 @@ import { UsuarioServiceService } from '../service/usuario/usuario-service.servic
 export class CadastroUsuarioPage implements OnInit {
   private usuario = new Usuario();
 
-  constructor(private usuarioService: UsuarioServiceService) { }
+  constructor(private usuarioService: UsuarioServiceService, private router: Router) { }
 
   ngOnInit() {
   }
 
   cadastrar() {
-    this.usuarioService.cadastrarUsuario(this.usuario)
+    this.usuario.tipoUsuario = "CLIENTE"
+    try {
+      this.usuarioService.cadastrarUsuario(this.usuario)
+      this.router.navigate(["/login"])
+    } catch (error) {
+
+    }
   }
 }

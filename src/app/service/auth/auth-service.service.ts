@@ -20,9 +20,8 @@ export class AuthServiceService {
     }
 
 
-    this.http.post<string>(`${environment.api}/auth`, login).subscribe(token => {
-      localStorage.set('token', token["token"]);
-      localStorage.getItem(token);
+    this.http.post<string>(`${environment.api}/auth`, login).subscribe(result => {
+      localStorage.setItem('token', result['token']);
     });
   }
 
