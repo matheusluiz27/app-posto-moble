@@ -16,4 +16,5 @@ export class ServicosService {
   get() {
     return this.httpService.get<JSON[]>(`${environment.api}`)
   }
+
 }
