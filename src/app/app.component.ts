@@ -26,22 +26,27 @@ export class AppComponent {
     {
       title: 'Hanking',
       url: '/hanking',
-      icon: 'list'
+      icon: 'menu'
     },
     {
       title: 'Sobre',
       url: '/sobre',
-      icon: 'list'
+      icon: 'menu'
     },
     {
       title: 'Crie sua conta',
       url: '/cadastro-usuario',
-      icon: 'list'
+      icon: 'menu'
     },
     {
       title: 'Login',
       url: '/login',
-      icon: 'list'
+      icon: 'menu'
+    },
+    {
+      title: 'Configurações',
+      url: '/confi',
+      icon: 'settings'
     }
   ];
 

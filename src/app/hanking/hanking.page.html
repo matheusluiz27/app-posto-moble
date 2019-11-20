@@ -15,14 +15,26 @@
 <ion-list class= "container">
 <ion-card>
   <ion-list>
-  <ion-item *ngFor="let item of items">
+  <ion-item *ngFor="let item of items" routerLink='/infoposto'>
     <ion-label>Posto1
       {{item.preco}}
+    <ion-col *ngFor="let star of stars"> 
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star-half"></ion-icon>
+      <ion-icon name="star-outline"></ion-icon>
+    </ion-col>   
   </ion-label>
   </ion-item>
-  <ion-item routerLink="">
+  <ion-item routerLink='/infoposto'>
       <ion-label>Posto2
       <p>Gasolina 4,00</p>
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star"></ion-icon>
+      <ion-icon name="star-half"></ion-icon>
+      <ion-icon name="star-outline"></ion-icon>
   </ion-label>
     </ion-item><ion-item routerLink="">
       <ion-label>Posto3
