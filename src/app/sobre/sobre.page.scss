@@ -1,16 +1,4 @@
-ion-card {
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    height:80%;
-    background: #bff9ff;
-    border: 10;
- }
- ion-header {
-     --ion-color-primary: rgb(0, 0, 0);
- }
- ion-card-header{
+ion-card-header{
      // card
      background: #0cd1e8;
      //text-shadow: -9px 5px 10px;
@@ -21,3 +9,11 @@ ion-card {
  ion-title{
      text-align: left;
  }
+ ion-list {
+    background: rgb(183, 244, 255);
+    height: 90%
+}
+ion-card {
+    background: rgb(205, 248, 255);
+    text-align: center;
+}
