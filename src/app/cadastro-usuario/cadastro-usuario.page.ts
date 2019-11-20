@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Usuario } from '../model/Usuario';
+import { UsuarioServiceService } from '../service/usuario/usuario-service.service';
 
 @Component({
   selector: 'app-cadastro-usuario',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cadastro-usuario.page.scss'],
 })
 export class CadastroUsuarioPage implements OnInit {
+  private usuario = new Usuario();
 
-  constructor() { }
+  constructor(private usuarioService: UsuarioServiceService) { }
 
   ngOnInit() {
   }
 
+  cadastrar() {
+    this.usuarioService.cadastrarUsuario(this.usuario)
+  }
 }
