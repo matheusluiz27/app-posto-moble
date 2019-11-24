@@ -29,25 +29,20 @@ export class AppComponent {
       icon: 'menu'
     },
     {
-      title: 'Sobre',
-      url: '/sobre',
-      icon: 'menu'
-    },
-    {
       title: 'Crie sua conta',
       url: '/cadastro-usuario',
-      icon: 'menu'
-    },
-    {
-      title: 'Login',
-      url: '/login',
       icon: 'menu'
     },
     {
       title: 'Configurações',
       url: '/confi',
       icon: 'settings'
-    }
+    },
+    {
+      title: 'Sobre',
+      url: '/sobre',
+      icon: 'menu'
+    },
   ];
 
   constructor(
