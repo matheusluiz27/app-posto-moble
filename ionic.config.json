@@ -1,5 +1,7 @@
 {
   "name": "posto",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

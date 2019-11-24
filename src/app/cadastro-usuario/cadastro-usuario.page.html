@@ -10,22 +10,22 @@
   <ion-list>
     <ion-item>
       <ion-label position="stacked">Email</ion-label>
-    <ion-input autocomplete="off" type="email"></ion-input>
+    <ion-input [(ngModel)]="usuario.email" autocomplete="off" type="email" name="email"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="stacked">Nome</ion-label>
-    <ion-input autocomplete="off" type="text"></ion-input>
+    <ion-input [(ngModel)]="usuario.nome" autocomplete="off" type="text" name="nome"></ion-input>
   </ion-item>
   
   <ion-item>
     <ion-label position="stacked">Senha</ion-label>
-    <ion-input autocomplete="off" type="password"></ion-input>
+    <ion-input [(ngModel)]="usuario.senha" autocomplete="off" type="password" name="senha"></ion-input>
   </ion-item>
   
   <ion-item lines='none'>
     Já tem conta? <a routerLink='/login'>Entre agora!</a>
   </ion-item>
   </ion-list>
-  <ion-button expand="block" share="round" color="secondary">Cadastrar</ion-button>
+  <ion-button expand="block" (click)="cadastrar()" share="round" color="secondary">Cadastrar</ion-button>
   </form>
 </ion-content>
